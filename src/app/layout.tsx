@@ -23,7 +23,7 @@ export default function RootLayout({
         <Navbar />
         
         {/* 'flex-grow' ensures this div fills all space above the footer */}
-        <main className="flex-grow w-full">
+        <main className="flex-grow w-full pt-20">
           {children}
         </main>
 
