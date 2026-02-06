@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GoalStrkr | Football Intelligence",
-  description: "Global news and live scores.",
+  title: "GoalStrkr | Pro Intelligence",
+  description: "Global football analysis and live scores.",
 };
 
 export default function RootLayout({
@@ -18,12 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      {/* min-h-screen + flex-col is the required foundation */}
-      <body className={`${inter.className} min-h-screen flex flex-col bg-white overflow-x-hidden`}>
+      <body className={`${inter.className} min-h-screen flex flex-col bg-[#111F35] text-white`}>
         <Navbar />
         
-        {/* 'flex-grow' ensures this div fills all space above the footer */}
-        <main className="flex-grow w-full pt-20">
+        {/* CHANGED: Increased padding to 'pt-32' to fix the header cut-off */}
+        <main className="flex-grow w-full pt-32">
           {children}
         </main>
 
