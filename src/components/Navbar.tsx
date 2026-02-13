@@ -48,9 +48,9 @@ export default function Navbar() {
              </svg>
            </button>
            
-           <button className="hidden md:block bg-gradient-to-r from-[#F63049] to-[#D02752] text-white px-6 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest hover:shadow-[0_0_20px_rgba(246,48,73,0.5)] transition-shadow">
-             Club Access
-           </button>
+           <Link href="/login" className="hidden md:block bg-gradient-to-r from-[#F63049] to-[#D02752] text-white px-6 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest hover:shadow-[0_0_20px_rgba(246,48,73,0.5)] transition-shadow">
+             Sign In
+           </Link>
         </div>
 
       </div>
