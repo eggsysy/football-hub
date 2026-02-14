@@ -115,7 +115,11 @@ export default function Home() {
       const normalizedArticles =
         data.articles?.map(normalizeArticle).filter(Boolean) || [];
 
-      setArticles(normalizedArticles);
+      const uniqueArticles = Array.from(
+        new Map(normalizedArticles.map((article) => [article.url, article])).values()
+      );
+
+      setArticles(uniqueArticles);
     } catch {
       setError("Unable to load live headlines right now. Please try again.");
       setArticles([]);
